@@ -1,0 +1,595 @@
+* {
+  scroll-behavior: smooth;
+}
+#touch_spacing {
+  display: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(to bottom, rgb(255 255 255 / 62%), rgb(255 255 255 / 31%)), url(bg.jpg); */
+  background-size: cover;
+  /* padding-top: 10%; */
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+#bar {
+  background-color: rgb(25 30 33);
+  padding: 4px;
+  position: fixed;
+  color: white;
+  top: 0%;
+  width: 100%;
+  height: 11%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+}
+
+#bar_icon {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+#bar a {
+  color: white;
+}
+
+#logo {
+  position: absolute;
+  font-family: "Quicksand";
+  font-size: xx-large;
+  font-weight: bolder;
+  font-size: -webkit-xxx-large;
+  margin: 17px;
+  margin-left: 45px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: large;
+  margin-right: 40px;
+  float: right;
+  padding: 10px;
+}
+
+ul li {
+  cursor: pointer;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+/* ul li::after{
+  content: "";  
+  background-color: yellow;
+  width: 0%;
+  height: 3px;
+  display: block;
+  margin: auto;
+  transition: .2s ;
+}
+
+ul li:hover::after{
+  width: 100%;
+} */
+
+li a:hover {
+  color: yellow;
+}
+
+.dropdown-content {
+  background-color: rgb(25 30 33);
+  position: absolute;
+  padding: 10px;
+  color: white;
+  /* margin-top: 5px; */
+  display: none;
+}
+
+#down_need:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a,
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#type {
+  text-align: center;
+  margin-bottom: 5%;
+  padding: 1% 0 4% 0;
+  margin-top: 6%;
+  height: 80vh;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: -3%;
+  /* background-color: black; */
+  background: linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 62%),
+      rgb(255 255 255 / 31%)
+    ),
+    url(bg.jpg);
+}
+
+/* #type:hover:after {
+  opacity: 1;
+} */
+
+/* #type h1{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: -15%;
+  font-size: 216px;
+  z-index: -1;
+} */
+
+#type h1 {
+  font-size: 50px;
+}
+
+.card_box img {
+  width: auto;
+  height: 100%;
+}
+
+.card_box {
+  z-index: 100;
+  overflow: hidden;
+  height: 400px;
+  width: 300px;
+  margin: 0 10px;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.4s;
+}
+
+.cardText {
+  color: aliceblue;
+  transition: 0.2s;
+  font-size: 40px;
+  margin-top: -55%;
+  transform: scale(0, 0);
+}
+
+.overlay button {
+  font-family: inherit;
+  margin-top: 75%;
+  background-color: #f0f8ff00;
+  border: 3px solid aliceblue;
+  color: aliceblue;
+  font-size: 25px;
+  transform: scale(0, 0);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.overlay {
+  text-align: center;
+  overflow: hidden;
+  width: 300px;
+  background: rgba(61, 68, 73, 0);
+  height: 400px;
+  transition: 0.2s;
+  position: absolute;
+}
+
+.card_box:hover .overlay {
+  background: rgba(0, 0, 0, 0.308);
+}
+
+.card_box:hover .cardText {
+  /* margin-top: -50%; */
+  transform: scale(1, 1);
+}
+
+.card_box:hover .overlay button {
+  transform: scale(1, 1);
+}
+
+.card_box:hover {
+  transform: scale(1.1);
+}
+
+.wall {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#merch {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.stuff {
+  background-color: white;
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  height: 300px;
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.order {
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  transition: 0.2s;
+  position: relative;
+  padding-top: 25%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.order i {
+  font-size: 25px;
+}
+
+.order a {
+  text-decoration: none;
+  font-size: larger;
+  color: #161c1c;
+  font-weight: bolder;
+}
+
+.order a:hover {
+  color: orange;
+}
+
+.order h3 {
+  font-size: 30px;
+  margin-top: 7%;
+}
+
+.order p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.stuff:hover .order {
+  margin-top: -143%;
+}
+
+.stuff img {
+  height: auto;
+  width: 100%;
+}
+
+.stuff:hover {
+  transform: scale(1.1);
+}
+
+.innerTouch {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #2a2b38;
+}
+
+.form h2 {
+  font-weight: bolder;
+  margin-top: 10%;
+  margin-bottom: -1%;
+}
+
+form input {
+  transition: 0.2s;
+  color: whitesmoke;
+  width: 40%;
+  border: none;
+  border-radius: 4px;
+  background-color: #1f2029;
+  padding: 2%;
+  outline: none;
+  margin: 7% 0 -1% 2%;
+}
+
+.formBtn {
+  margin-top: 6%;
+  font-family: inherit;
+  color: #102770;
+  box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+  background-color: #ffeba7;
+  border-radius: 4px;
+  border: none;
+  font-size: 120%;
+  font-weight: bolder;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.formBtn:hover {
+  transform: scale(1.1);
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+#turn {
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  color: #ffeba7;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+#shake {
+  overflow: hidden;
+  left: 47%;
+  position: absolute;
+  z-index: 1;
+  top: 375%;
+  transition: 0.2s;
+}
+
+#shake img {
+  height: 100%;
+  width: auto;
+  /* object-fit: cover; */
+}
+
+hr {
+  width: 15%;
+  opacity: 0.6;
+  margin: -22px auto 39px auto;
+}
+
+/*social grid*/
+#social {
+  position: fixed;
+  top: 45%;
+  /* left: 1%; */
+  border-radius: 0px 15px 14px 0px;
+  z-index: 100;
+  font-size: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #00edff;
+}
+
+#wallOfHeroes {
+  transition: 0.3s;
+  padding-top: 3%;
+}
+
+#outer_container {
+  overflow: hidden;
+  height: 750px;
+  margin: -120px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  overflow: hidden;
+  margin: 0px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+  height: 80%;
+  margin-top: 100px;
+}
+#intro {
+  font-size: 31px;
+  margin: 20px;
+  margin-top: 30%;
+  font-weight: bolder;
+}
+#text {
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.73)), url(textbg.jpg); */
+  background-size: cover;
+  background-color: #161c1c;
+  color: white;
+  background-repeat: no-repeat;
+}
+.hero {
+  font-size: 260%;
+}
+#no {
+  font-size: 301px;
+  font-weight: bold;
+  margin-bottom: -30%;
+  top: 3%;
+  position: absolute;
+  margin-left: 20px;
+  left: 4%;
+  opacity: 0.5;
+}
+#info {
+  margin: 20px;
+  font-size: 120%;
+  margin-bottom: 50px;
+}
+
+#footer {
+  width: 100%;
+  height: 200px;
+  bottom: 0%;
+  text-align: center;
+  justify-items: center;
+  margin-top: 5%;
+  /* line-height: 300px; */
+  background-color: rgb(25 30 33);
+  display: flex;
+  align-items: center;
+}
+
+#footer h2 {
+  color: aliceblue;
+  /* text-align: center; */
+  margin: 0 auto;
+  font-weight: 100;
+  display: inline;
+}
+h2 img {
+  display: inline;
+  border-radius: 50%;
+  width: 100px;
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 1%;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Custom Input Style */
+.niceform input,
+.niceform textarea {
+  font-size: 16px;
+  padding: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 3px solid #bbb;
+  line-height: 20px;
+  text-indent: 5px;
+  width: 400px;
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+}
+.niceform textarea {
+  height: 100px;
+}
+.niceform button {
+  font-size: 16px;
+  padding: 6px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 0px solid #333;
+  line-height: 20px;
+  width: 200px;
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+  margin-left: 213px;
+  background-color: #666;
+  color: #ccc;
+  cursor: pointer;
+}
+.niceform button:hover,
+.niceform button:focus {
+  outline: none;
+  background-color: #444;
+  color: #eee;
+}
+.niceform input:hover,
+.niceform textarea:hover {
+  outline: none;
+  border-color: #aaa;
+}
+.niceform input:focus,
+.niceform textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+/* 
+@media(max-width:1431px){
+  body{
+    padding-top: 15%;
+    overflow-x: hidden;
+  }
+  .innerTouch{
+    text-align: center;
+  }
+  #secondForm{
+    display: none;
+  }
+  #bar{
+    text-align: center;
+    height: 5%;
+  }
+  #footer{
+    display: none;
+  }
+  #bodydiv{
+    width: 100%;
+  }
+  ul{
+    display: none;
+  }
+  #type{
+  background: linear-gradient(to bottom, rgb(255 255 255), rgb(255 255 255)), url(bg.jpg);
+  }
+  #bar_icon{
+    display: block;
+  }
+
+  #outer_container{
+    overflow: hidden;
+    height: 1000px;
+  }
+
+  #text{
+    z-index: -1;
+  }
+
+  #photo{
+    z-index: -2;
+  }
+
+  #photo img{
+    width: 100%;
+    height: 100%;
+  }
+  #social,#shake{
+    display: none;
+  }
+  #wallOfHeroes{
+    display: none;
+  }
+  #touch_spacing{
+    display: block;
+    height: 200px;
+  }
+} */

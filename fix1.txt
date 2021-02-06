@@ -1,0 +1,47 @@
+<div id="touch">
+    
+      <!-- login -->
+      <div class="innerTouch" id="log">
+        <div id="form">
+          <h2>Log In</h2>
+          <form>
+
+            <i class="fas fa-user"></i><input type="text" name="name" placeholder="Username" id="username">
+            <br>
+            <i class="fas fa-key"></i><input type="password" name="password" placeholder="Password" id="password">
+            <br>
+            <button class="formBtn">Log In</button>
+
+          </form>
+
+          <h4>Still not a member ? <button id="turn" onclick="turn()">Sign in</button></h4>
+        </div>
+        <div id="shake">
+          <img src="./hand.jpg" alt="" srcset="">
+        </div>
+      </div>
+
+      <!-- signin -->
+      <div class="innerTouch" id="sign">
+        <div id="form">
+          <h2>Sign In</h2>
+          <form>
+
+            <i class="fas fa-user"></i><input style="margin: 5% 0 -2% 2%;" type="text" name="name" placeholder="Username" id="username">
+            <br>
+            <i class="fas fa-at"></i><input style="margin: 5% 0 -2% 2%;" type="text" name="name" placeholder="E-mail" id="username">
+            <br>
+            <i class="fas fa-key"></i><input style="margin: 5% 0 -2% 2%;" type="password" name="password" placeholder="Password" id="password">
+            <br>
+            <button class="formBtn">Sign In</button>
+
+          </form>
+
+          <h4>Already a member ? <button id="turn">Log In</button></h4>
+        </div>
+        <div id="shake">
+          <img src="./hand.jpg" alt="" srcset="">
+        </div>
+      </div>
+
+    </div>

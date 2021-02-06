@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Lair</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="./titleLogo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+  </head>
+<body >
+
+  <div id="bodydiv">
+    <div id="bar">
+      <a href="#type"><div id="logo"><i class="fas fa-meteor"></i> the Lair</div></a>
+      <ul>
+        <!-- <li onclick="scroller('home')">Homes</li> -->
+        <li><a href="#type">Home</a></li>
+        <!-- <li onclick="scroller('wall')">Heros</li> -->
+        <li><a href="#wallOfHeroes">Heroes</a></li>
+        <!-- <li onclick="scroller('merch')">Merch</li> -->
+        <li><a href="#merch">Merch</a></li>
+        <!-- <li onclick="scroller('touch')">Community</li> -->
+        <li onclick="scroller('touch')"><a href="#touch">Community</a></li>
+      </ul>
+
+      <div id="bar_icon" >
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </div>
+
+    <div id="type" data-aos="fade-down" >
+
+      <h1>Choose your side</h1>
+      <div class="card_box" id="type1">
+        <div class="overlay">
+          <button class="card-button">Try it <i class="fas fa-arrow-right"></i></button>
+          <div class="cardText">
+            HERO
+          </div>
+        </div>
+        <img class="cardImg" src="type1.jpg" alt="" srcset="" >
+      </div>
+
+      <div class="card_box" id="type1">
+        <div class="overlay">
+          <button class="card-button">Try it <i class="fas fa-arrow-right"></i></button>
+          <div class="cardText">
+            VILLAIN
+          </div>
+        </div>
+        <img class="cardImg" src="joker.jpg" alt="" srcset="">
+      </div>
+
+      <div class="card_box" id="type1">
+        <div class="overlay">
+          <button class="card-button">Try it <i class="fas fa-arrow-right"></i></button>
+          <div class="cardText">
+            ANTI-VILLAIN
+          </div>
+        </div>
+        <img class="cardImg" src="deadpool.jpg" alt="" srcset="">
+      </div>
+
+    </div>
+
+    <div id="wallOfHeroes">
+
+    <h1 class="wall" style="color: white;">Wall OF Heros</h1>
+    <hr data-aos="fade-up">
+    <div id="outer_container" data-aos="fade-up">
+      <div class="container" >
+        <div id="text">
+          <div id="no">01</div>
+          <div id="intro">
+            <!-- <br> -->
+            Your friendly neighbourhood <span class="hero"> <span style="color: red;">Spider</span><span style="color: blue;">man</span></span> 
+          </div>
+          <div id="info">
+            <i class="fas fa-quote-left"></i> Hope you were watching, Uncle Ben. 'Cause I did that for you. Kept everyone safe. Kept them from being scared. And I made it fun. It doesn't matter that most of 'em wouldn't have lifted a finger for Peter Parker.
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+        <div id="photo">
+          <img style="width: 110%;" src="spiderman-wallpaper.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="outer_container" data-aos="fade-up">
+      <div class="container">
+        <div id="text">
+          <div id="no">02</div>
+          <div id="intro">
+            <!-- <br> -->
+            I'm vengence, I'm the night,<br> I am<span class="hero"> <span style="color: yellow;">Bat</span>man</span> 
+          </div>
+          <div id="info">
+            <i class="fas fa-quote-left"></i> A hero can be anyone, even a man doing something as simple and reassuring as putting a coat on a young boy's shoulders to let him know that the world hadn't ended. <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+        <div id="photo">
+          <img style="width: 110%;" src="batman2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="outer_container" data-aos="fade-up">
+      <div class="container">
+        <div id="text" style="background-color: #771a25;">
+          <div id="no">03</div>
+          <div id="intro">
+            <!-- <br> -->
+            It's a bird, It's a plane. No! It's<span class="hero"> <span style="color: white">Superman</span></span> 
+          </div>
+          <div id="info">
+            <i class="fas fa-quote-left"></i> They can be a great people, Kal-El, they wish to be. They only lack the light to show the way. For this reason above all, their capacity for good, I have sent them you… my only son. <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+        <div id="photo">
+          <img style="width: 110%;" src="superman.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+    <div id="merch" data-aos="fade-down">
+      <br>
+      <h1 class="wall">Merch</h1>
+      <hr>
+      <div class="stuff" >
+        <img src="tee1.jpg">
+        <div class="order">
+          <i class="fas fa-tshirt"></i>
+          <h3>T Shirts</h3>
+          <p>Nothing says "Super" <br> like a logo on your chest.</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+      <div class="stuff">
+        <img src="hat1.jpg" alt="" srcset="">
+        <div class="order">
+          <i class="fas fa-hat-wizard"></i>
+          <h3>Hats</h3>
+          <p>Like Vision's Gem,<br> Wear it proudly.</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+      <div class="stuff">
+        <img src="mask2.jpg" alt="" srcset="">
+        <div class="order">
+          <i class="fas fa-head-side-mask"></i>
+          <h3>Masks</h3>
+          <p>It's not for you. It's for <br> the ones you care about</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+      <div class="stuff">
+        <img src="head1.jpg" alt="" srcset="">
+        <div class="order">
+          <i class="fas fa-headphones-alt"></i>
+          <h3>Tech</h3>
+          <p>Crank up those openings <br> from animated series</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <h1 class="wall">Get In touch</h1>
+    <hr>
+    <div id="touch">
+    
+      <div class="innerTouch" id="log">
+
+        <!-- login -->
+        <div class="form">
+          <h2>Log In</h2>
+          <form>
+
+            <i class="fas fa-user"></i><input type="text" name="name" placeholder="Username" id="username">
+            <br>
+            <i class="fas fa-key"></i><input type="password" name="password" placeholder="Password" id="password">
+            <br>
+            <button class="formBtn">Log In</button>
+
+          </form>
+
+          <h4>Still not a member ? <button id="turn" onclick="toSign()">Sign in</button></h4>
+        </div>
+
+        <div id="shake">
+          <img src="./hand.jpg" alt="" srcset="">
+        </div>
+
+        <!-- sign in -->
+        <div class="form" id="secondForm">
+          <h2>Sign In</h2>
+          <form>
+
+            <i class="fas fa-user"></i><input style="margin: 5% 0 -2% 2%;" type="text" name="name" placeholder="Username" id="username">
+            <br>
+            <i class="fas fa-at"></i><input style="margin: 5% 0 -2% 2%;" type="text" name="name" placeholder="E-mail" id="username">
+            <br>
+            <i class="fas fa-key"></i><input style="margin: 5% 0 -2% 2%;" type="password" name="password" placeholder="Password" id="password">
+            <br>
+            <button class="formBtn">Sign In</button>
+
+          </form>
+
+          <h4>Already a member ? <button id="turn" onclick="toLog()">Log In</button></h4>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <h2>created By 
+        <img src="me.jpg">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><i class="fab fa-battle-net"></i> Sandupa Egodage</span></h2> 
+    </div>
+
+    <div id="social">
+      <i class="fab fa-facebook-f"></i><br>
+      <i class="fab fa-instagram"></i><br>
+      <i class="fab fa-twitter"></i><br>
+      <i class="fab fa-reddit"></i><br>
+    </div>
+
+  </div>
+
+  <script>
+
+    // function scrollToTop() {
+    //   window.scrollTo({
+    //     top: 2711,
+    //     behavior: 'smooth'
+    //   });
+    // }
+
+    function scroller(where){
+      if (where=="home"){
+        window.scrollTo(0,0);
+      }
+      if (where=="wall"){
+        window.scrollTo(0,700);
+      }
+      if (where=="merch"){
+        window.scrollTo(0,2711);
+      }
+      if (where=="touch"){
+        window.scrollTo(0,3223);
+      }
+    }
+
+    // (function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(!e)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
+
+    function getcount(){
+      console.log(window.scrollY);
+      if(window.scrollY>400){
+        document.getElementById("wallOfHeroes").style.backgroundColor = "black";
+      }
+      if(window.scrollY<400){
+        document.getElementById("wallOfHeroes").style.backgroundColor = "white";
+      }
+      if(window.scrollY>2420){
+        document.getElementById("wallOfHeroes").style.backgroundColor = "white";
+      }
+    }
+
+    window.addEventListener("scroll",getcount);
+    
+    AOS.init();
+
+    function toSign(){
+      document.getElementById("shake").style.left = "27.5%";
+    }
+
+    function toLog(){
+      document.getElementById("shake").style.left = "47%";
+    }
+
+    // The function actually applying the offset
+    function offsetAnchor() {
+        if(location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        }
+    }
+
+    // This will capture hash changes while on the page
+    window.addEventListener("hashchange", offsetAnchor);
+
+    // This is here so that when you enter the page with a hash,
+    // it can provide the offset in that case too. Having a timeout
+    // seems necessary to allow the browser to jump to the anchor first.
+    //window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+  </script>
+</body>
+</html>
